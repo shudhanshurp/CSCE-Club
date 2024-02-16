@@ -8,7 +8,10 @@ function getWeather() {
     )}&units=imperial&appid=${apiKey}`;
 
     fetch(url)
-        .then((resp) => resp.json())
+        .then((resp) => {
+            console.log(resp);
+            return resp.json();
+        })
         .then((data) => displayWeather(data))
         .catch((error) => console.error(error));
 }
