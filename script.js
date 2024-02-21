@@ -36,7 +36,7 @@ function displayWeather(data) {
     document.getElementById("humidity").innerText = `Humidity: ${humidity}%`;
     document.getElementById("wind").innerText = `Wind: ${speed}mph`;
 
-    let miliseconds = 300;
+    let miliseconds = 500;
     setTimeout(() => {
         let weatherInfo = document.querySelector(".weatherInfo");
         weatherInfo.style.display = "auto";
